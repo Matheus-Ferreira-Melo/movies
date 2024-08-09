@@ -4,7 +4,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-os.getenv("SENHA")
+senha = os.getenv("SENHA")
 
 def get_db_connection():
     conn = psycopg2.connect(host='teste1-matheusferreiramelo30-7964.i.aivencloud.com',
